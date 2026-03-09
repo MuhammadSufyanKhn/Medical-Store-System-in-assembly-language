@@ -49,9 +49,3 @@ To run or modify this code, you will need an 8086 Assembly emulator or assembler
 4. The system will output the `Total Price` in PKR.
 5. Press `1` to return to the Main Menu or `2` to Exit the program.
 
-## 🧠 Code Structure Highlights
-
-* **`DISPLAY` Macro:** A reusable macro that simplifies printing strings to the console using DOS interrupt `21H` (Function `09H`).
-* **`CALCULATE` Procedure:** Reads the quantity, performs the multiplication (`MUL`), and formats the hexadecimal result into decimal form using the `AAM` instruction.
-* **`PRINT_TOTAL` Procedure:** Converts the calculated values into ASCII characters and handles the visual formatting of the final price (appending the '0', '/-', and 'PKR').
-* **Control Flow:** Utilizes `CMP` and `JE` instructions extensively to route the user through the menu system based on their inputs.
